@@ -1,0 +1,34 @@
+D:\GitHub\WebAPIClient\WebAPIClient\bin\Debug\net6.0\WebAPIClient.exe
+D:\GitHub\WebAPIClient\WebAPIClient\bin\Debug\net6.0\WebAPIClient.deps.json
+D:\GitHub\WebAPIClient\WebAPIClient\bin\Debug\net6.0\WebAPIClient.runtimeconfig.json
+D:\GitHub\WebAPIClient\WebAPIClient\bin\Debug\net6.0\WebAPIClient.dll
+D:\GitHub\WebAPIClient\WebAPIClient\bin\Debug\net6.0\ref\WebAPIClient.dll
+D:\GitHub\WebAPIClient\WebAPIClient\bin\Debug\net6.0\WebAPIClient.pdb
+D:\GitHub\WebAPIClient\WebAPIClient\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\GitHub\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.csproj.AssemblyReference.cache
+D:\GitHub\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.AssemblyInfoInputs.cache
+D:\GitHub\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.AssemblyInfo.cs
+D:\GitHub\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.csproj.CoreCompileInputs.cache
+D:\GitHub\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.csproj.CopyComplete
+D:\GitHub\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.dll
+D:\GitHub\WebAPIClient\WebAPIClient\obj\Debug\net6.0\ref\WebAPIClient.dll
+D:\GitHub\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.pdb
+D:\GitHub\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.genruntimeconfig.cache
+D:\CS Projects\WebAPIClient\WebAPIClient\bin\Debug\net6.0\WebAPIClient.exe
+D:\CS Projects\WebAPIClient\WebAPIClient\bin\Debug\net6.0\WebAPIClient.deps.json
+D:\CS Projects\WebAPIClient\WebAPIClient\bin\Debug\net6.0\WebAPIClient.runtimeconfig.json
+D:\CS Projects\WebAPIClient\WebAPIClient\bin\Debug\net6.0\WebAPIClient.dll
+D:\CS Projects\WebAPIClient\WebAPIClient\bin\Debug\net6.0\ref\WebAPIClient.dll
+D:\CS Projects\WebAPIClient\WebAPIClient\bin\Debug\net6.0\WebAPIClient.pdb
+D:\CS Projects\WebAPIClient\WebAPIClient\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\CS Projects\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.csproj.AssemblyReference.cache
+D:\CS Projects\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.GeneratedMSBuildEditorConfig.editorconfig
+D:\CS Projects\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.AssemblyInfoInputs.cache
+D:\CS Projects\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.AssemblyInfo.cs
+D:\CS Projects\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.csproj.CoreCompileInputs.cache
+D:\CS Projects\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.csproj.CopyComplete
+D:\CS Projects\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.dll
+D:\CS Projects\WebAPIClient\WebAPIClient\obj\Debug\net6.0\ref\WebAPIClient.dll
+D:\CS Projects\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.pdb
+D:\CS Projects\WebAPIClient\WebAPIClient\obj\Debug\net6.0\WebAPIClient.genruntimeconfig.cache
