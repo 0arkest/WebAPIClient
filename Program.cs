@@ -1,5 +1,11 @@
 ﻿// Activity # 5
-// Wei Chen
+// Author: Wei Chen
+// Last Modified: 02/24/2022
+// Description:
+// From https://documenter.getpostman.com/view/8854915/Szf7znEe,
+// Use Gender Detector(https://genderize.io/) API, a simple API to predict the gender of a person given their name.
+// Note:
+// The API is free for up to 1000 names/day only.
 
 using System;
 using System.Threading.Tasks;
@@ -10,34 +16,17 @@ using System.Collections.Generic;
 
 namespace WebAPIClient
 {
-    class Pokémon
+    class Person
     {
         [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonProperty("id")]
-        public int Id { get; set; }
+        [JsonProperty("gender")]
+        public string Gender { get; set; }
 
-        [JsonProperty("weight")]
-        public int Weight { get; set; }
+        [JsonProperty("probability")]
+        public float Probability { get; set; }
 
-        [JsonProperty("height")]
-        public int Height { get; set; }
-
-        public List<Types> Types { get; set; }
-
-    }
-
-    public class Type
-    {
-        [JsonProperty("name")]
-        public string Name { get; set; }
-    }
-
-    public class Types
-    {
-        [JsonProperty("type")]
-        public Type Type;
     }
 
     class Program
@@ -55,32 +44,39 @@ namespace WebAPIClient
             {
                 try
                 {
-                    Console.WriteLine("Enter Pokémon name. Press Enter without writing a name to quit the program.");
+                    Console.WriteLine("Enter the person's name. Press Enter without writing a name to quit the program.");
+                    Console.WriteLine("You can try names like peter, marry, etc.");
 
-                    var PokémonName = Console.ReadLine();
+                    var PersonName = Console.ReadLine();
 
-                    if (string.IsNullOrEmpty(PokémonName))
+                    if (string.IsNullOrEmpty(PersonName))
                     {
                         break;
                     }
 
-                    var result = await client.GetAsync("https://pokeapi.co/api/v2/pokemon/" + PokémonName.ToLower());
+                    var result = await client.GetAsync("https://api.genderize.io?name=" + PersonName.ToLower());
                     var resultRead = await result.Content.ReadAsStringAsync();
 
-                    var pokémon = JsonConvert.DeserializeObject<Pokémon>(resultRead);
+                    var person = JsonConvert.DeserializeObject<Person>(resultRead);
 
-                    Console.WriteLine("---");
-                    Console.WriteLine("Pokemon #" + pokémon.Id);
-                    Console.WriteLine("Name: " + pokémon.Name);
-                    Console.WriteLine("Weight: " + pokémon.Weight + "lb");
-                    Console.WriteLine("Height: " + pokémon.Height + "ft");
-                    Console.WriteLine("Type(s):");
-                    pokémon.Types.ForEach(t => Console.WriteLine(" " + t.Type.Name));
-                    Console.WriteLine("\n---");
+                    if (string.IsNullOrEmpty(person.Gender))
+                    {
+                        Console.WriteLine("ERROR. Invalid name, unable to predict that person's gender.");
+                        Console.WriteLine("\n");
+                    }
+                    else
+                    {
+                        Console.WriteLine("---");
+                        Console.WriteLine("The name of the person you entered: " + person.Name);
+                        Console.WriteLine("Prediction of that person's gender: " + person.Gender);
+                        Console.WriteLine("Certainty of the assigned gender: " + person.Probability);
+                        Console.WriteLine("\n---");
+                    }
+                    
                 }
                 catch (Exception)
                 {
-                    Console.WriteLine("ERROR. Please enter a valid Pokémon name!");
+                    Console.WriteLine("ERROR. Request limit reached!");
                 }
                 
             }
